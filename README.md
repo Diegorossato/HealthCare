@@ -30,6 +30,10 @@
 
 [Instruções para usar o projeto, exemplos de código e informações sobre como executar o projeto]
 
+## Arquitetura
+
+[Descrição da arquitetura de software e hardware do projeto, incluindo diagramas e explicações de como as diferentes partes do projeto funcionam juntas]
+
 ## Contribuindo
 
 [Instruções sobre como contribuir para o projeto, como enviar pull requests e informações sobre a estrutura e organização do projeto]
