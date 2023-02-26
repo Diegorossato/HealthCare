@@ -30,9 +30,9 @@
 
 [Descrição da arquitetura de software e hardware do projeto, incluindo diagramas e explicações de como as diferentes partes do projeto funcionam juntas]
 
-## Contribuindo
+## Desenvolvedores/Contribuintes
 
-[Instruções sobre como contribuir para o projeto, como enviar pull requests e informações sobre a estrutura e organização do projeto]
+[Liste o time responsável pelo desenvolvimento do projeto]
 
 ## Licença
 
