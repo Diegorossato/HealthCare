@@ -22,10 +22,6 @@
 - [Sistema Operacional 1]
 - [Versão do Sistema Operacional 1]
 
-## Instalação
-
-[Instruções passo a passo para configurar o ambiente de desenvolvimento local e instalar o projeto]
-
 ## Uso
 
 [Instruções para usar o projeto, exemplos de código e informações sobre como executar o projeto]
