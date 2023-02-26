@@ -1,7 +1,7 @@
 # HealthCare
 ### Tópicos 
 
-:small_blue_diamond: [Visão Geral](#Visão Geral)
+:small_blue_diamond: [Visão Geral](#Visão-Geral)
 
 :small_blue_diamond: [Funcionalidades](#Funcionalidades)
 
