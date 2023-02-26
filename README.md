@@ -11,7 +11,7 @@
 
 :small_blue_diamond: [Uso](#Uso)
 
-:small_blue_diamond: [Arquitetura](#Arquitetura)****
+:small_blue_diamond: [Arquitetura](#Arquitetura)
 
 :small_blue_diamond: [Desenvolvedores/Contribuintes](#[Desenvolvedores/Contribuintes)
 
