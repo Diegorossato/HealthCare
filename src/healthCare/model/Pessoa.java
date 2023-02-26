@@ -4,15 +4,26 @@ import java.util.Scanner;
 
 public abstract class Pessoa {
 	
-	 //Atributos da classe Pessoa:	
+	 //Atributos da classe Pessoa:
+	    private int id;
+		public int getId() {
+			return id;
+		}
+
+		public void setId(int id) {
+			this.id = id;
+		}
+
 		private String nome;
 		private int idade;
 		private double peso;
 		private Boolean jaTeveDoenca;
 		private Boolean estaGravida;
+	
 		
 		//construtor
-		public Pessoa(String nome, int idade, double peso, Boolean jaTeveDoenca, Boolean estaGravida) {
+		public Pessoa(int id, String nome, int idade, double peso, Boolean jaTeveDoenca, Boolean estaGravida) {
+			this.id = id;
 			this.nome = nome;
 			this.idade = idade;
 			this.peso = peso;
