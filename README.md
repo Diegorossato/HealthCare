@@ -19,8 +19,6 @@
 
 :small_blue_diamond: [Licença](#[Licença)
 
-[Descreva o projeto em uma frase ou duas]
-
 ## Visão Geral
 
 [Descreva o objetivo do projeto e o problema que ele resolve em mais detalhes]
