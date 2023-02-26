@@ -5,9 +5,9 @@
 
 :small_blue_diamond: [Funcionalidades](#Funcionalidades)
 
-:small_blue_diamond: [Tecnologias Utilizadas](#Tecnologias Utilizadas)
+:small_blue_diamond: [Tecnologias Utilizadas](#Tecnologias-Utilizadas)
 
-:small_blue_diamond: [Requisitos do Sistema](#[Requisitos do Sistema)
+:small_blue_diamond: [Requisitos do Sistema](#[Requisitos-do-Sistema)
 
 :small_blue_diamond: [Uso](#Uso)
 
