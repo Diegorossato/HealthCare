@@ -17,14 +17,10 @@
 
 - [Linguagem de Programação 1]
 
-
 ## Requisitos do Sistema
 
 - [Sistema Operacional 1]
 - [Versão do Sistema Operacional 1]
-- [Sistema Operacional 2]
-- [Versão do Sistema Operacional 2]
-- [Outros Requisitos]
 
 ## Instalação
 
@@ -37,10 +33,6 @@
 ## Contribuindo
 
 [Instruções sobre como contribuir para o projeto, como enviar pull requests e informações sobre a estrutura e organização do projeto]
-
-## Documentação
-
-[Links para documentação adicional, como manuais de usuário ou referências de API]
 
 ## Licença
 
