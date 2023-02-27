@@ -1,5 +1,7 @@
-# HealthCare
-[Descreva o projeto em uma frase ou duas]
+<img width=15% src="https://i.imgur.com/QwPYaLY.png"/>
+
+# HealthCare 
+A HealthCare é um sistema que auxilia os brasileiros(as) a descobrirem se estão aptos a doarem sangue
 
 ### Tópicos 
 
@@ -21,26 +23,19 @@
 
 ## Visão Geral
 
-[Descreva o objetivo do projeto e o problema que ele resolve em mais detalhes]
+Visando facilitar e otimizar a anamnese que é feita manualmente nos hemocentros
 
 ## Funcionalidades
 
-- [Funcionalidade 1]
-- [Funcionalidade 2]
-- [Funcionalidade 3]
+- 1- Cadastrar Pessoa
+- 2- Listar Doadores
+- 3- Excluir Doador
+- 4- Atualizar Doador
+- 5- Sair
 
 ## Tecnologias Utilizadas
 
-- [Linguagem de Programação 1]
-
-## Requisitos do Sistema
-
-- [Sistema Operacional 1]
-- [Versão do Sistema Operacional 1]
-
-## Uso
-
-[Instruções para usar o projeto, exemplos de código e informações sobre como executar o projeto]
+<img width=10% src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white"/>
 
 ## Arquitetura
 
