@@ -21,7 +21,7 @@ A HealthCare é um sistema que auxilia os brasileiros(as) a descobrirem se estã
 
 ## Visão Geral
 
-Visando facilitar e otimizar a anamnese que é feita manualmente nos hemocentros
+Visando facilitar e otimizar a anamnese que é feita manualmente nos hemocentros.
 
 ## Funcionalidades
 
