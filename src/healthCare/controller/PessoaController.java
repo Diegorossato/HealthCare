@@ -35,7 +35,7 @@ public class PessoaController implements PessoaRepository {
 			System.out.println("O cadastro de " + pessoa.getNome() + " foi atualizado");
 
 		} else {
-			System.out.println("Essa pessoa não foi encontrada! Sintimos muito por isso...");
+			System.out.println("Essa pessoa não foi encontrada! Sentimos muito por isso...");
 		}
 
 	}
@@ -118,6 +118,7 @@ public class PessoaController implements PessoaRepository {
 	}
 
 	public boolean pesoDoacao(double peso) {
+		
 		if (peso < 50) {
 			System.out.println("Você tem menos que 50 quilos. Doar pode ser prejudial a sua saúde");
 			return false;
@@ -129,6 +130,7 @@ public class PessoaController implements PessoaRepository {
 	public boolean doencaDoacao(String s) {
 		var estaDoente = validarResposta(s);
 		if (estaDoente == "s") {
+			System.out.println("Infelizmente você tem uma doença que lhe impede de doar...");
 			return true;
 		}
 		return false;
@@ -143,7 +145,6 @@ public class PessoaController implements PessoaRepository {
 			if (pessoa.getNome().equals(nome)) {
 				return true;
 			}
-
 		}
 		return false;
 	}
