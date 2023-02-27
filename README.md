@@ -1,5 +1,5 @@
 # HealthCare ![image](https://i.imgur.com/OhskfS3.png)
-A HealthCare é um sistema que auxilia os brasileiros(as) a descobrirem se estão aptos a doarem sangue
+A HealthCare é um sistema que auxilia os brasileiros(as) a descobrirem se estão aptos a doarem sangue.
 
 ### Tópicos 
 
