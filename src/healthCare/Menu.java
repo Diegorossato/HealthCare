@@ -22,14 +22,14 @@ public class Menu {
 		int idade = 0;
 		double peso = 0;
 		Boolean jaTeveDoenca = null;
-		Boolean estaGravida= null;
+		Boolean estaGravida = null;
 
-	Doadora d1 = new Doadora(1,"Jo",25,63,false,false);
-    pessoas.cadastrarPessoa(d1);
+		Doadora d1 = new Doadora(1, "Jo", 25, 63, false, false);
+		pessoas.cadastrarPessoa(d1);
 
 		while (true) {
-			System.out.println(Cores.TEXT_RED + Cores.ANSI_BLACK_BACKGROUND + "" + 
-		              "________________________________________________\n"
+			System.out.println(Cores.TEXT_RED + Cores.ANSI_BLACK_BACKGROUND + ""
+					+ "________________________________________________\n"
 					+ "|                                              |\n"
 					+ "|                 HEALTHCARE                   |\n"
 					+ "|______________________________________________|\n"
@@ -39,16 +39,16 @@ public class Menu {
 					+ "| 3 - Excluir Doador                           |\n"
 					+ "| 4 - Atualizar Doador                         |\n"
 					+ "| 5 - Sair                                     |\n"
-					+ "|______________________________________________|\n" + "\n" + "Entre com a opção desejada:\n" + Cores.TEXT_RESET);
-	
-				try {
-					opcao = leia.nextInt();		
-				}catch(InputMismatchException e) {
-					System.out.println("\n Digite valores inteiros!");
-					leia.nextLine();
-				    opcao=0;	
-				}
-			
+					+ "|______________________________________________|\n" + "\n" + "Entre com a opção desejada:\n"
+					+ Cores.TEXT_RESET);
+
+			try {
+				opcao = leia.nextInt();
+			} catch (InputMismatchException e) {
+				System.out.println("\n Digite valores inteiros!");
+				leia.nextLine();
+				opcao = 0;
+			}
 
 			if (opcao == 5) {
 				System.out.println("\n Healthcare - Honestidade também Salva Vidas");
@@ -78,78 +78,77 @@ public class Menu {
 						break;
 					}
 				}
-				
+
 				boolean idadeValida = false;
 				while (!idadeValida) {
-				    System.out.println("Informe sua idade: ");
-				    try {
-				        idade = leia.nextInt();
-				        idadeValida = true;
-				    } catch (InputMismatchException e) {
-				        System.out.println("Por favor, insira um valor numérico para a idade.");
-				        leia.next(); 
-				    }
-				
+					System.out.println("Informe sua idade: ");
+					try {
+						idade = leia.nextInt();
+						idadeValida = true;
+					} catch (InputMismatchException e) {
+						System.out.println("Por favor, insira um valor numérico para a idade.");
+						leia.next();
+					}
+
 				}
-					if (pessoas.doacaoIdade(idade) == false) {
-					    pessoas.repostaNegativa();
-					
-				 
+				if (pessoas.doacaoIdade(idade) == false) {
+					pessoas.repostaNegativa();
+
 				} else {
 					System.out.println("Informe seu peso: ");
 					boolean pesoValido = false;
 					while (!pesoValido) {
-					    try {
-					        peso = leia.nextDouble();
-					        pesoValido = true;
-					    } catch (InputMismatchException e) {
-					        System.out.println("Por favor, insira um valor numérico para o peso.");
-					        leia.next(); 
-					    }
+						try {
+							peso = leia.nextDouble();
+							pesoValido = true;
+						} catch (InputMismatchException e) {
+							System.out.println("Por favor, insira um valor numérico para o peso.");
+							leia.next();
+						}
 					}
-					if (pessoas.pesoDoacao(peso) == false) { 
-					    pessoas.repostaNegativa();
+					if (pessoas.pesoDoacao(peso) == false) {
+						pessoas.repostaNegativa();
 					} else {
-						
+
 						System.out.println("Você já teve alguma das seguintes doenças?\n" + " - HIV\n" + " - Malária\n"
 								+ " - Doença de Chagas\n" + " - Câncer, incluindo leucemia\n"
 								+ " - Problemas de coagulação de sangue\n"
 								+ " - Diabetes com complicações vasculares ou em uso de insulina\n"
 								+ " - Problemas graves no pulmão, coração, rins ou fígado\n"
 								+ "Digite S para Sim ou N para Não: ");
-						
+
 						String resposta = leia.next();
-						
+
 						jaTeveDoenca = resposta.equalsIgnoreCase("S");
-						
-						if(resposta.equalsIgnoreCase("S")) {
-							
+
+						if (resposta.equalsIgnoreCase("S")) {
+
 							pessoas.repostaNegativa();
 							jaTeveDoenca = true;
 							System.out.println("Infelizmente você tem uma doença que lhe impede de doar.");
-									
-						}else{
-							
-						System.out.println("Você está grávida? Digite S para Sim ou N para Não: ");
-						resposta = leia.next();
-					    estaGravida = resposta.equalsIgnoreCase("S");	
-						if(resposta.equalsIgnoreCase("S")) {
-							pessoas.repostaNegativa();
-							estaGravida = true;
-							System.out.println("Você está grávida! Pessoas em gestação não podem doar.");
-							
-						}else {	
-							Pessoa p = new Doadora(pessoas.gerarId(), nome, idade, peso, jaTeveDoenca, estaGravida);
-						pessoas.cadastrarPessoa(p);
+
+						} else {
+
+							System.out.println("Você está grávida? Digite S para Sim ou N para Não: ");
+							resposta = leia.next();
+							estaGravida = resposta.equalsIgnoreCase("S");
+							if (resposta.equalsIgnoreCase("S")) {
+								pessoas.repostaNegativa();
+								estaGravida = true;
+								System.out.println("Você está grávida! Pessoas em gestação não podem doar.");
+
+							} else {
+								Pessoa p = new Doadora(pessoas.gerarId(), nome, idade, peso, jaTeveDoenca, estaGravida);
+								pessoas.cadastrarPessoa(p);
+							}
 						}
-					  }
 					}
-				}	
-				
-				keyPress();		
+				}
+
+				keyPress();
 				break;
 			}
-			
+
 			case 2 -> {
 				System.out.println("2 - Listar Doadores");
 				pessoas.listarTodas();
@@ -159,7 +158,7 @@ public class Menu {
 			case 3 -> {
 				System.out.println("3 - Excluir Doador");
 				String nomePessoa = "";
-				while(nomePessoa.isEmpty()) {
+				while (nomePessoa.isEmpty()) {
 					System.out.println("Por favor, Digite o nome da pessoa: ");
 					leia.nextLine();
 					nomePessoa = leia.nextLine();
@@ -173,79 +172,76 @@ public class Menu {
 				System.out.println("Por favor, informe seu nome:");
 				leia.nextLine();
 				nome = leia.nextLine();
-				
-			
-				
+
 				if (pessoas.buscaNome(nome)) {
 					int id = pessoas.pegarId(nome);
 
 					System.out.println("Digite seu nome atualizado:");
-					
+
 					String novoNome = leia.nextLine();
-					
+
 					System.out.println("Meu nome é " + novoNome);
-					
+
 					System.out.println("Digite sua idade:");
-					
+
 					int novaIdade = leia.nextInt();
-					
+
 					if (pessoas.doacaoIdade(novaIdade) == false) {
-						
+
 						System.out.println("Seus dados foram atualizados, e infelizmente, "
 								+ "a partir de agora você estará impossibilitado de doar");
 						pessoas.deletar(nome);
-						
-					}else {
-					
-					System.out.println("Digite seu peso:");
-					
-					double novoPeso = leia.nextDouble();
-					if(pessoas.pesoDoacao(novoPeso) == false ) {
-						
-						
-						System.out.println("Seus dados foram atualizados, e infelizmente, "
-								+ "a partir de agora você estará impossibilitado de doar");
-						pessoas.deletar(nome);
-						
-						
-					}else {
-						
-					System.out.println("Você já teve alguma das seguintes doenças?\n" + " - HIV\n" + " - Malária\n"
-							+ " - Doença de Chagas\n" + " - Câncer, incluindo leucemia\n"
-							+ " - Problemas de coagulação de sangue\n"
-							+ " - Diabetes com complicações vasculares ou em uso de insulina\n"
-							+ " - Problemas graves no pulmão, coração, rins ou fígado\n"
-							+ "Digite S para Sim ou N para Não: ");
-					String respostaAtualizada = leia.next();
-					
-					if (respostaAtualizada.equalsIgnoreCase("S")) {
-						jaTeveDoenca = true;
-						System.out.println("Seus dados foram atualizados, e infelizmente, "
-								+ "a partir de agora você estará impossibilitado de doar");
-						pessoas.deletar(nome);	
-						
-					}else {
-						System.out.println("Você está grávida? Digite S para Sim ou N para Não: ");
-						String respostaGravidez = leia.next();
-					if (respostaGravidez.equalsIgnoreCase("S")) {
-						estaGravida = true;
-						System.out.println("Seus dados foram atualizados, e infelizmente, "
-								+ "a partir de agora você estará impossibilitado de doar");
-						pessoas.deletar(nome);
-					}else {
-						System.out.println("Seus dados foram atualizados com sucesso! ");
-					pessoas.atualizar(new Doadora(id, novoNome, novaIdade, novoPeso, jaTeveDoenca, estaGravida));
+
+					} else {
+
+						System.out.println("Digite seu peso:");
+
+						double novoPeso = leia.nextDouble();
+						if (pessoas.pesoDoacao(novoPeso) == false) {
+
+							System.out.println("Seus dados foram atualizados, e infelizmente, "
+									+ "a partir de agora você estará impossibilitado de doar");
+							pessoas.deletar(nome);
+
+						} else {
+
+							System.out.println("Você já teve alguma das seguintes doenças?\n" + " - HIV\n"
+									+ " - Malária\n" + " - Doença de Chagas\n" + " - Câncer, incluindo leucemia\n"
+									+ " - Problemas de coagulação de sangue\n"
+									+ " - Diabetes com complicações vasculares ou em uso de insulina\n"
+									+ " - Problemas graves no pulmão, coração, rins ou fígado\n"
+									+ "Digite S para Sim ou N para Não: ");
+							String respostaAtualizada = leia.next();
+
+							if (respostaAtualizada.equalsIgnoreCase("S")) {
+								jaTeveDoenca = true;
+								System.out.println("Seus dados foram atualizados, e infelizmente, "
+										+ "a partir de agora você estará impossibilitado de doar");
+								pessoas.deletar(nome);
+
+							} else {
+								System.out.println("Você está grávida? Digite S para Sim ou N para Não: ");
+								String respostaGravidez = leia.next();
+								if (respostaGravidez.equalsIgnoreCase("S")) {
+									estaGravida = true;
+									System.out.println("Seus dados foram atualizados, e infelizmente, "
+											+ "a partir de agora você estará impossibilitado de doar");
+									pessoas.deletar(nome);
+								} else {
+									System.out.println("Seus dados foram atualizados com sucesso! ");
+									pessoas.atualizar(
+											new Doadora(id, novoNome, novaIdade, novoPeso, jaTeveDoenca, estaGravida));
+								}
+							}
+						}
 					}
-					}
-					}
-					}
-				}else {
+				} else {
 					System.out.println("Desculpe, mas não foi possível encontrar este doador. Tente novamente!");
 				}
-				
-					keyPress();
-				
-					break;
+
+				keyPress();
+
+				break;
 			}
 			case 5 -> {
 				System.out.println("5 - Sair");
@@ -254,7 +250,7 @@ public class Menu {
 			default -> {
 				System.out.println("Número inválido, por favor, insira um número de 1 a 5");
 			}
-		 }
+			}
 		}
 	}
 
