@@ -17,9 +17,10 @@ public class Menu {
 		PessoaController pessoas = new PessoaController();
 
 		int opcao;
-		String nome, respostaG = null;
-		int idade;
-		double peso;
+		String respostaG = null;
+		String nome = null;
+		int idade = 0;
+		double peso = 0;
 		Boolean jaTeveDoenca = null;
 		Boolean estaGravida= null;
 
@@ -60,25 +61,55 @@ public class Menu {
 			case 1 -> {
 				System.out.println("1 - Cadastrar Pessoa");
 
-				System.out.println("Informe o nome que gostaria de ser chamade: ");
-				nome = leia.next();
-				System.out.println("Informe sua idade: ");
-				idade = leia.nextInt();
-				if (pessoas.doacaoIdade(idade) == false) {// validando idade
+				boolean nomeValido = false;
+
+				while (!nomeValido) {
+					try {
+						System.out.println("\nInforme o nome que gostaria de ser chamade: ");
+						nome = leia.next();
+
+						if (nome.matches("^[a-zA-Z]+$")) {
+							nomeValido = true;
+						} else {
+							System.out.println("Erro: Insira apenas letras para o nome!");
+						}
+					} catch (Exception e) {
+						System.out.println("Erro: Insira apenas letras para o nome");
+						break;
+					}
+				}
+				
+				boolean idadeValida = false;
+				while (!idadeValida) {
+				    System.out.println("Informe sua idade: ");
+				    try {
+				        idade = leia.nextInt();
+				        idadeValida = true;
+				    } catch (InputMismatchException e) {
+				        System.out.println("Por favor, insira um valor numérico para a idade.");
+				        leia.next(); 
+				    }
+				
+				}
+					if (pessoas.doacaoIdade(idade) == false) {
+					    pessoas.repostaNegativa();
 					
-					pessoas.repostaNegativa();
-					
+				 
 				} else {
-					
 					System.out.println("Informe seu peso: ");
-					peso = leia.nextDouble();
-					
-					if (pessoas.pesoDoacao(peso) == false) {
-						// validando peso
-						
-						pessoas.repostaNegativa();
-						
-					}else {
+					boolean pesoValido = false;
+					while (!pesoValido) {
+					    try {
+					        peso = leia.nextDouble();
+					        pesoValido = true;
+					    } catch (InputMismatchException e) {
+					        System.out.println("Por favor, insira um valor numérico para o peso.");
+					        leia.next(); 
+					    }
+					}
+					if (pessoas.pesoDoacao(peso) == false) { 
+					    pessoas.repostaNegativa();
+					} else {
 						
 						System.out.println("Você já teve alguma das seguintes doenças?\n" + " - HIV\n" + " - Malária\n"
 								+ " - Doença de Chagas\n" + " - Câncer, incluindo leucemia\n"
@@ -143,7 +174,7 @@ public class Menu {
 				leia.nextLine();
 				nome = leia.nextLine();
 				
-				//System.out.println(pessoas.buscaNome(nome));
+			
 				
 				if (pessoas.buscaNome(nome)) {
 					int id = pessoas.pegarId(nome);
@@ -213,7 +244,7 @@ public class Menu {
 				}
 				
 					keyPress();
-				//System.out.println("Não entrou no if");
+				
 					break;
 			}
 			case 5 -> {
