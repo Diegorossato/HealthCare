@@ -21,8 +21,13 @@ public class PessoaController implements PessoaRepository {
 
 	@Override
 	public void listarTodas() {
-		for (var pessoa : listaPessoas) {
-			pessoa.visualizar();
+		
+		if(listaPessoas.isEmpty()) {
+			System.out.println("No momento, não há nenhum doador(a) cadastrado no sistema!");
+		}else {
+			for (var pessoa : listaPessoas) {
+				pessoa.visualizar();
+			}
 		}
 
 	}
