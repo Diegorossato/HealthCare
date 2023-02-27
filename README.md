@@ -1,6 +1,4 @@
-<img width=15% src="https://i.imgur.com/QwPYaLY.png"/>
-
-# HealthCare 
+# HealthCare ![image](https://i.imgur.com/OhskfS3.png)
 A HealthCare é um sistema que auxilia os brasileiros(as) a descobrirem se estão aptos a doarem sangue
 
 ### Tópicos 
@@ -39,14 +37,20 @@ Visando facilitar e otimizar a anamnese que é feita manualmente nos hemocentros
 
 ## Arquitetura
 
-![WhatsApp_Image_2023-02-24_at_13 58 06-removebg-preview](https://user-images.githubusercontent.com/112277192/221626103-be8e9e39-8414-46cf-b5e9-354ff76a239b.png)
+![0zmrxVB](https://user-images.githubusercontent.com/112277192/221626501-be3c0cf1-d052-43a7-a17d-88e72d09b3d8.jpg)
 
-
+## Protótipo
+Com base no projeto, foi criado um protótipo visual de como ficaria se nossa aplicação tivesse um sistema mobile, confira abaixo:
+<br>
+<a href="https://www.figma.com/proto/sbxHPoTK7zvkSOn8EuxIGe/HelthCare?node-id=1%3A3&scaling=scale-down&page-id=0%3A1&starting-point-node-id=21%3A986">Clique para acessar o Protótipo</a>
 
 ## Desenvolvedores/Contribuintes
 
-[Liste o time responsável pelo desenvolvimento do projeto]
+Desenvolvedores: 
 
-## Licença
-
-[Informações sobre a licença do projeto]
+- 1- Cris
+- 2- Diego
+- 3- Edney
+- 4- Gabriel
+- 5- Mayara
+- 6- Rafa
