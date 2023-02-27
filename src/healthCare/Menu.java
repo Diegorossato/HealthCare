@@ -202,7 +202,7 @@ public class Menu {
 								+ "a partir de agora você estará impossibilitado de doar");
 						pessoas.deletar(nome);
 					}else {
-						System.out.println("Seus dados foram atualizados com sucesso ! ");
+						System.out.println("Seus dados foram atualizados com sucesso! ");
 					pessoas.atualizar(new Doadora(id, novoNome, novaIdade, novoPeso, jaTeveDoenca, estaGravida));
 					}
 					}
