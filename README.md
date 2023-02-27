@@ -39,7 +39,8 @@ Visando facilitar e otimizar a anamnese que é feita manualmente nos hemocentros
 
 ## Arquitetura
 
-![0zmrxVB](https://user-images.githubusercontent.com/112277192/221625579-de0917be-f47d-4da9-93bb-b2d46f030c5f.jpg)
+![WhatsApp_Image_2023-02-24_at_13 58 06-removebg-preview](https://user-images.githubusercontent.com/112277192/221626103-be8e9e39-8414-46cf-b5e9-354ff76a239b.png)
+
 
 
 ## Desenvolvedores/Contribuintes
