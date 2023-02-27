@@ -39,7 +39,8 @@ Visando facilitar e otimizar a anamnese que é feita manualmente nos hemocentros
 
 ## Arquitetura
 
-[Descrição da arquitetura de software e hardware do projeto, incluindo diagramas e explicações de como as diferentes partes do projeto funcionam juntas]
+![0zmrxVB](https://user-images.githubusercontent.com/112277192/221625579-de0917be-f47d-4da9-93bb-b2d46f030c5f.jpg)
+
 
 ## Desenvolvedores/Contribuintes
 
