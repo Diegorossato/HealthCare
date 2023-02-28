@@ -46,11 +46,11 @@ Com base no projeto, foi criado um protótipo visual de como ficaria se nossa ap
 
 ## Desenvolvedores/Contribuintes
 
-Desenvolvedores: 
+Desenvolvedores:  
 
 - 1- Cris
 - 2- Diego
 - 3- Edney
 - 4- Gabriel
 - 5- Mayara
-- 6- Rafa
+- 6- Rafa 
