@@ -24,8 +24,7 @@ public class Menu {
 		Boolean jaTeveDoenca = null;
 		Boolean estaGravida = null;
 
-		Doadora d1 = new Doadora(1, "Jo", 25, 63, false, false);
-		pessoas.cadastrarPessoa(d1);
+		
 
 		while (true) {
 			System.out.println(Cores.TEXT_RED + Cores.ANSI_BLACK_BACKGROUND + ""
