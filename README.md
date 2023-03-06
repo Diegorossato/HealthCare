@@ -31,7 +31,7 @@ Visando facilitar e otimizar a anamnese que é feita manualmente nos hemocentros
 - 4- Atualizar Doador
 - 5- Sair
 
-## Tecnologias Utilizadas
+## Tecnologias Utilizadas 
 
 <img width=10% src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white"/>
 
