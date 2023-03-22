@@ -46,7 +46,7 @@ Com base no projeto, foi criado um protótipo visual de como ficaria se nossa ap
 
 ## Desenvolvedores/Contribuintes
 
-Desenvolvedores:  
+Desenvolvedores: 
 
 - 1- Cris
 - 2- Diego
